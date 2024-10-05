@@ -1,0 +1,339 @@
+/* General navbar styles */
+.navbar {
+  background-color: #4b4848;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 1000;
+  padding-top: 26px;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 0;
+  background-color: #d1dbe4;
+}
+
+/* Section styles */
+section {
+  margin: 50px 0;
+  padding: 50px 30px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 90px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+#about {
+  background-color: black;
+  color: white;
+  padding: 180px 50px;
+}
+
+#skills {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 130px 50px;
+}
+
+#projects {
+  background-color: black;
+  padding-top: 85px;
+}
+
+#certifications {
+  background-color: black;
+}
+
+#contact {
+  background-color: black;
+  padding: 150px 0;
+}
+
+/* Project gallery */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted for responsiveness */
+  gap: 40px;
+  justify-content: center;
+}
+
+.project-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-item figcaption {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Change the opacity slightly on hover */
+figcaption {
+  color: white;
+  color: yellow;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Add transition for the entire item */
+}
+
+.project-item:hover {
+  transform: scale(1.05); /* Scale the entire project item */
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease; /* Only opacity will change on the image */
+}
+
+.project-item img:hover {
+  opacity: 0.9; /* Slightly change opacity of the image */
+}
+
+.project-item figcaption,
+.project-item p {
+  margin: 0.5em 0;
+}
+
+.skills-box {
+  padding: 20px;
+  background-color: black; /* Light background for the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+  max-width: 600px; /* Limit the box width */
+  margin: 0 auto; /* Center the box horizontally */
+  border: 1px solid #ddd; /* Optional border */
+}
+
+ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.skills-box li {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: black;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow by default */
+  color: white;
+}
+
+.skills-box li:hover {
+  transform: scale(1.05); /* Slightly enlarge the item on hover */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Add a more prominent shadow on hover */
+  color: yellow;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  color: white; /* Change to your desired color */
+}
+
+/* Style for GitHub buttons */
+.github-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(86, 86, 237);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: rgb(104, 104, 211);
+}
+
+/* General form table styles */
+.form-table {
+  margin: 0 auto; /* Center table */
+  width: 50%; /* Adjust width as needed */
+  border-spacing: 15px; /* Add space between rows */
+}
+
+/* Align labels and inputs properly */
+.label-cell {
+  text-align: right;
+  padding-right: 10px; /* Space between label and input */
+}
+
+.input-cell {
+  text-align: left;
+  width: 100%;
+}
+
+.input-cell input,
+.input-cell textarea {
+  width: 100%; /* Make input and textarea full width */
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input-cell textarea {
+  height: 100px; /* Height for textarea */
+}
+
+/* Submit button alignment */
+.submit-cell {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Error styling */
+.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  /* Adjust styles for laptops and smaller screens */
+  section {
+    padding: 40px 20px; /* Reduce padding */
+    margin: 30px 0; /* Reduce margin */
+  }
+
+  h2 {
+    font-size: 28px; /* Smaller heading size */
+  }
+
+  p,
+  ul {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .form-table {
+    width: 80%; /* Increase width for better display */
+  }
+
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 columns on larger tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile screens */
+  section {
+    padding: 30px 15px; /* Further reduce padding */
+    margin: 20px 0; /* Further reduce margin */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  p,
+  ul {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .form-table {
+    width: 90%; /* Adjust width for better display */
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr; /* Show 1 column on small screens */
+  }
+
+  .navbar {
+    padding: 10px 0; /* Reduce navbar padding */
+  }
+}
+
+
+/*<div className="project-item">
+      <img src={project6} alt="Project 6" />
+      <figcaption>Project 6: Typing Webpage</figcaption>
+      <p>A Typing webpage with task tracking features, built using React.js and Firebase for real-time updates.</p>
+      <a href="https://github.com/ChristaJerlin/sample_coding/blob/main/Typing%20Text%20Animation.html" target="_blank" className="github-btn">View on GitHub</a><br></br>
+      <a href="https://github.com/ChristaJerlin/sample_coding/blob/main/project6.png" target="_blank" className="github-btn">View Project</a>
+    </div> (project-6 if needed add)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  

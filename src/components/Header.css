@@ -1,0 +1,20 @@
+.header {
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.J5WUPGRnSPNyDt0vENnjrwHaDn&pid=Api&P=0&h=180'); /* Add your own background */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    height:500px;
+  }
+  
+  .header h1 {
+    font-size: 48px;
+    margin-top:10%;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 24px;
+  }
+  

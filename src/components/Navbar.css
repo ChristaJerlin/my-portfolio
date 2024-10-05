@@ -1,0 +1,121 @@
+/* General navbar styles */
+.navbar {
+  background-color: #4b4848;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 0;
+  z-index: 1000;
+  padding-top: 26px;
+}
+
+/* Navbar container for layout */
+.navbar-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Adding padding to the sides for better appearance */
+}
+
+/* Navbar links for desktop */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Pushes nav links to the right side of the container */
+  transition: max-height 0.3s ease; /* Transition for the dropdown menu */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none; /* Initially hide hamburger */
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  margin-right: auto; /* Align hamburger to the left */
+  transition: transform 0.3s ease; /* Smooth transformation for the hamburger */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: all 0.3s ease; /* Transition for the bars */
+}
+
+.bar.open {
+  background-color: #ffcc00;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    left: 0; /* Align to the left */
+    background-color: #4b4848; /* Background color for dropdown */
+    width: 100%; /* Full width for dropdown */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding for links */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for dropdown */
+    transition: max-height 0.3s ease; /* Smooth transition for dropdown visibility */
+    max-height: 0; /* Initially hide dropdown */
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when hamburger is clicked */
+    max-height: 500px; /* Set a max height for the dropdown */
+  }
+
+  .nav-links li {
+    margin: 15px 0; /* Margin for vertical spacing */
+  }
+
+  /* Hamburger menu visible on mobile */
+  .hamburger {
+    display: flex; /* Show hamburger menu */
+    margin-right: auto; /* Ensures hamburger aligns to the left */
+    transition: transform 0.3s ease; /* Smooth transformation */
+  }
+
+  /* Align navbar items to the left for mobile view */
+  .navbar-container {
+    justify-content: flex-start; /* Space between hamburger and nav links */
+  }
+
+  /* Adjust the nav-links alignment when hamburger is clicked */
+  .nav-links {
+    text-align: center; /* Align text to the left for better readability */
+    
+  }
+}
+
+
+
+
+
+  
